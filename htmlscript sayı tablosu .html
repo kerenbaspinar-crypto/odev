@@ -1,0 +1,36 @@
+<html>
+ <head>
+  <meta charset="UTF-8">
+ <title> htmlScript sayı sütunu </title>
+  </head>
+  <h1> çift sayılar yeşil tek sayılar sarı kutularda bulunmaktadır </h1>
+  <body>
+  <script>
+  var i;
+  var j;
+  for(i=1; i<=2; i++)
+  {
+    for(j=1; j<=2; j++)
+     {
+     document.write("*renkli sayı tablosu*");
+     }
+  document.write("<br>");
+  }
+  document.write("<table border=2>");
+  for(i=5; i<=40; i++)
+  {
+    document.write("<tr>");
+
+    for(j=0; j<=20; j++)
+    {
+         if(j % 2== 0)
+         document.write("<td bgcolor=green>" + j + "</td>");
+         else
+         document.write("<td bgcolor=yellow>" + j + "</td>");
+    }
+    document.write("</tr>");
+  }
+document.write("</table>");
+  </script>
+  </body>
+  </html>
